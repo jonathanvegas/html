@@ -14,7 +14,8 @@ app.get("/", (req,res) => {
   
   //output = output + "hello there html"; //middle
   for (let i = 0; i < students.length; i++){
-    output = output + '<li><input type="checkbox">' + students[i] + '</li>';
+    output = output + '<li><input type="checkbox">' + 
+    students[i] + '</li>';
   }
 
   output = output + "</ul></body></html>"; // 
