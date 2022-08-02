@@ -2,16 +2,40 @@
 <html>
   <head> 
     <title>my first html</title>
+    <link rel="stylesheet" href="style.css">
+    
     <style>
-        h1{
-          color: orange;
-          font-size: 5vw;
+        /*h1 {
+          background-color: green;
         }
+        header > h1 {
+            background-color: red;
+        }
+        #thisOne {
+          background-color: yellow;
+        }
+        .thisType{
+          background-color: blue;
+        }
+        .whiteText{
+          color: white
+        }
+        .custom-box {
+          width: 320px;
+          padding: 10px;
+          padding-top: 0;
+          border: 15px dashed crimson;
+          margin: 0;
+        }*/
     </style>
   </head>
   <body>
-    <header style="font-size: 5em; color: salmon;">this is the header</header>
-    <img src="/family.jpg" 
+    <header style="font-family:Helvetica; font-size: 5em; color: salmon;">
+      <h1 id="thisOne">This is the Header</h1>
+    </header>
+    <h1 class="thisType whiteText">this is other h1</h1>
+
+    <img class = "custom-box" src="/family.jpg" 
     width="200">
     <br>
     <a href="https://bocacode.com/candidates" 

@@ -10,7 +10,7 @@ let students = ["bob", "samantha", "lily", "grace", "jim"];
 
 app.get("/", (req,res) => {
 
-  let output = "<html><body><ul>"; //starts
+  let output = "<html><body><title>my first html</title><ul>"; //starts
   
   //output = output + "hello there html"; //middle
   for (let i = 0; i < students.length; i++){
@@ -19,9 +19,8 @@ app.get("/", (req,res) => {
   }
 
   output = output + "</ul></body></html>"; // 
-
   res.send(output);
-});
+}); 
 
 app.listen(port, () => {
   console.log("localhost: 4001");
